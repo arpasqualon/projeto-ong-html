@@ -1,0 +1,30 @@
+/* Design System */
+:root {
+  /* 1. Paleta de Cores (8 cores) */
+  --color-primary: #0077b6; /* Azul principal */
+  --color-secondary: #00b4d8; /* Azul claro secundário */
+  --color-accent: #fb8500; /* Laranja para destaque e botões */
+
+  --color-text: #333333; /* Texto principal escuro */
+  --color-text-light: #666666; /* Texto secundário */
+
+  --color-background: #fdfdfd; /* Fundo principal */
+  --color-neutral-light: #eeeeee; /* Fundo de seções, bordas */
+  --color-neutral-dark: #cccccc; /* Detalhes */
+
+  /* 2. Tipografia Hierárquica (5+ tamanhos) */
+  --font-family-base: 'Helvetica', Arial, sans-serif;
+  --font-size-h1: 2.5rem;   /* 40px */
+  --font-size-h2: 2rem;     /* 32px */
+  --font-size-h3: 1.5rem;   /* 24px */
+  --font-size-body: 1rem;   /* 16px */
+  --font-size-small: 0.875rem; /* 14px */
+
+  /* 3. Sistema de Espaçamento Modular */
+  --space-xs: 0.5rem;   /* 8px */
+  --space-s: 1rem;      /* 16px */
+  --space-m: 1.5rem;    /* 24px */
+  --space-l: 2rem;      /* 32px */
+  --space-xl: 3rem;     /* 48px */
+  --space-xxl: 4rem;    /* 64px */
+}
