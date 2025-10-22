@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patas Amigas - Cuidando de quem mais precisa</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="container">
+    <h1><a href="index.html">Patas Amigas</a></h1>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger-menu">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </label>
+    <nav>
+      <a href="index.html">Início</a><a href="projetos.html">Projetos</a><a href="cadastro.html">Cadastro</a>
+    </nav>
+  </header>
+
+  <main id="app-root" class="container">
+    <section>
+      <h2>Cuidando de quem mais precisa</h2>
+      <img src="images/feliz.jpg" alt="Colagem de fotos com pessoas e animais felizes interagindo." class="hero-image">
+      <p>A ONG Patas Amigas nasceu do sonho de um pequeno grupo de amigos que não podiam mais ver tantos animais abandonados nas ruas. Nossa missão é resgatar, cuidar e encontrar um lar seguro e cheio de amor para todos eles.</p>
+    </section>
+    <hr>
+    <section>
+      <h2>Fale Conosco</h2>
+
+      <p class="form-intro">Tem alguma dúvida ou sugestão? Mande uma mensagem!</p>
+
+      <form>
+        <div class="form-row">
+          <div>
+            <label for="nome-contato">Seu Nome:</label><br>
+            <input type="text" id="nome-contato" name="nome-contato">
+          </div>
+          <div>
+            <label for="email-contato">Seu E-mail:</label><br>
+            <input type="email" id="email-contato" name="email-contato">
+          </div>
+        </div>
+        <br>
+        <label for="mensagem-contato">Sua Mensagem:</label><br>
+        <textarea id="mensagem-contato" name="mensagem-contato" rows="8"></textarea><br><br>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p>ONG Patas Amigas - Transformando vidas, uma patinha de cada vez.</p>
+  </footer>
+
+  <script src="js/router.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
