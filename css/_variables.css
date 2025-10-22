@@ -28,3 +28,33 @@
   --space-xl: 3rem;     /* 48px */
   --space-xxl: 4rem;    /* 64px */
 }
+/* Design System da ONG Patas Amigas */
+:root {
+  /* 1. Paleta de Cores (8 cores definidas) */
+  --color-primary: #0077b6;         /* Azul principal para links e destaques */
+  --color-secondary: #00b4d8;       /* Azul claro para fundos e efeitos */
+  --color-accent: #fb8500;          /* Laranja para botões e chamadas de ação */
+
+  --color-text: #333333;            /* Cor do texto principal (quase preto) */
+  --color-text-light: #666666;      /* Cor para textos secundários e parágrafos */
+
+  --color-background: #f8f9fa;      /* Fundo principal do site (cinza bem claro) */
+  --color-neutral-light: #ffffff;   /* Branco para cards e seções */
+  --color-neutral-dark: #dee2e6;     /* Cinza para bordas e divisórias */
+
+  /* 2. Tipografia Hierárquica (Fonte Profissional) */
+  --font-family-base: 'Lato', 'Helvetica', Arial, sans-serif;
+  --font-size-h1: 2.5rem;   /* 40px */
+  --font-size-h2: 2rem;     /* 32px */
+  --font-size-h3: 1.5rem;   /* 24px */
+  --font-size-body: 1rem;   /* 16px */
+  --font-size-small: 0.875rem; /* 14px */
+
+  /* 3. Sistema de Espaçamento Modular */
+  --space-xs: 0.5rem;   /* 8px */
+  --space-s: 1rem;      /* 16px */
+  --space-m: 1.5rem;    /* 24px */
+  --space-l: 2rem;      /* 32px */
+  --space-xl: 3rem;     /* 48px */
+  --space-xxl: 4rem;    /* 64px */
+}
