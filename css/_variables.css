@@ -1,19 +1,19 @@
-/* Design System */
+/* Design System da ONG Patas Amigas */
 :root {
-  /* 1. Paleta de Cores (8 cores) */
-  --color-primary: #0077b6; /* Azul principal */
-  --color-secondary: #00b4d8; /* Azul claro secundário */
-  --color-accent: #fb8500; /* Laranja para destaque e botões */
+  /* 1. Paleta de Cores (8 cores definidas) */
+  --color-primary: #0077b6;         /* Azul principal para links e destaques */
+  --color-secondary: #00b4d8;       /* Azul claro para fundos e efeitos */
+  --color-accent: #fb8500;          /* Laranja para botões e chamadas de ação */
 
-  --color-text: #333333; /* Texto principal escuro */
-  --color-text-light: #666666; /* Texto secundário */
+  --color-text: #333333;            /* Cor do texto principal (quase preto) */
+  --color-text-light: #666666;      /* Cor para textos secundários e parágrafos */
 
-  --color-background: #fdfdfd; /* Fundo principal */
-  --color-neutral-light: #eeeeee; /* Fundo de seções, bordas */
-  --color-neutral-dark: #cccccc; /* Detalhes */
+  --color-background: #f8f9fa;      /* Fundo principal do site (cinza bem claro) */
+  --color-neutral-light: #ffffff;   /* Branco para cards e seções */
+  --color-neutral-dark: #dee2e6;     /* Cinza para bordas e divisórias */
 
-  /* 2. Tipografia Hierárquica (5+ tamanhos) */
-  --font-family-base: 'Helvetica', Arial, sans-serif;
+  /* 2. Tipografia Hierárquica (Fonte Profissional) */
+  --font-family-base: 'Lato', 'Helvetica', Arial, sans-serif;
   --font-size-h1: 2.5rem;   /* 40px */
   --font-size-h2: 2rem;     /* 32px */
   --font-size-h3: 1.5rem;   /* 24px */

@@ -1,53 +1,46 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nossos Projetos e Como Ajudar - Patas Amigas</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header>
+  <header class="container">
     <h1><a href="index.html">Patas Amigas</a></h1>
-
     <input type="checkbox" id="menu-toggle" class="menu-toggle">
     <label for="menu-toggle" class="hamburger-menu">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
     </label>
-
     <nav>
-      <a href="index.html">Início</a>
-      <a href="projetos.html">Projetos</a>
-      <a href="cadastro.html">Cadastro</a>
+      <a href="index.html">Início</a><a href="projetos.html">Projetos</a><a href="cadastro.html">Cadastro</a>
     </nav>
   </header>
 
-  <main>
+  <main id="app-root" class="container">
     <section class="gallery">
       <h2>Conheça quem espera por uma família!</h2>
-
       <figure>
-        <img src="images/caramelo.jpg" alt="Um cachorro vira-lata de cor caramelo com uma bandana rosa." width="300">
+        <img src="images/caramelo.jpg" alt="Um cachorro vira-lata de cor caramelo com uma bandana rosa.">
         <figcaption><strong>Caramelo:</strong> Nosso grandão de coração mole. Perfeito para quem busca um companheiro fiel.</figcaption>
       </figure>
-
       <figure>
-        <img src="images/salsicha.jpg" alt="Um cachorro da raça Dachshund, marrom, usando uma bandana amarela." width="300">
+        <img src="images/salsicha.jpg" alt="Um cachorro da raça Dachshund, marrom, usando uma bandana amarela.">
         <figcaption><strong>Salsicha:</strong> Não se engane pelo tamanho, a coragem aqui é de leão! Ideal para uma família ativa.</figcaption>
       </figure>
-
       <figure>
-        <img src="images/gato.jpeg" alt="Um gato laranja e branco deitado confortavelmente." width="300">
+        <img src="images/gato.jpeg" alt="Um gato laranja e branco deitado confortavelmente.">
         <figcaption><strong>Miau:</strong> O verdadeiro rei do descanso. Miau é um gato super tranquilo, mestre em relaxamento.</figcaption>
       </figure>
     </section>
-
     <hr>
 
-    <section>
+    <section class="cta-section">
       <h2>Como Você Pode Ajudar</h2>
       <article>
         <h3>Seja um Voluntário</h3>
@@ -65,9 +58,12 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="container">
     <p>ONG Patas Amigas - Adote um amigo, mude uma vida!</p>
   </footer>
 
+  <script src="js/router.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
