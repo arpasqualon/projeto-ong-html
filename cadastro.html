@@ -13,18 +13,20 @@
 
   <header class="container">
     <h1><a href="index.html">Patas Amigas</a></h1>
+
     <input type="checkbox" id="menu-toggle" class="menu-toggle">
-    <label for="menu-toggle" class="hamburger-menu">
+    <label for="menu-toggle" class="hamburger-menu" aria-label="Abrir menu de navegação">
       <span class="bar"></span><span class="bar"></span><span class="bar"></span>
     </label>
-    <nav>
+
+    <nav aria-label="Navegação principal">
       <a href="index.html">Início</a><a href="projetos.html">Projetos</a><a href="cadastro.html">Cadastro</a>
     </nav>
   </header>
 
   <main id="app-root" class="container">
     <h2>Junte-se à nossa equipe!</h2>
-    <p>Preencha o formulário abaixo para se tornar um herói para os nossos animais.</p>
+    <p class="form-intro">Preencha o formulário abaixo para se tornar um herói para os nossos animais.</p>
     <form novalidate>
       <fieldset>
         <legend>Dados Pessoais</legend>
