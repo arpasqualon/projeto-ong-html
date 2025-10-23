@@ -9,6 +9,7 @@ body {
   background-color: var(--color-background);
   color: var(--color-text-light);
   line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona transição suave de cores */
 }
 h1, h3 {
   color: var(--color-primary);
@@ -40,6 +41,7 @@ header {
   background-color: var(--color-neutral-light);
   padding: var(--space-s) 0;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: background-color 0.3s ease;
 }
 main {
   padding-top: var(--space-xl);
@@ -47,11 +49,12 @@ main {
 }
 footer {
   background-color: var(--color-primary);
-  color: #ffffff;
+  color: var(--color-background); /* Rodapé sempre usa cor de fundo como texto */
   text-align: center;
   padding-top: var(--space-xl);
   padding-bottom: var(--space-xl);
   margin-top: var(--space-xl);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 .container {
   width: 100%;
@@ -98,7 +101,7 @@ footer {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 .gallery figure:hover {
   transform: translateY(-5px);
@@ -132,6 +135,7 @@ fieldset {
   border-radius: 8px;
   padding: var(--space-l);
   margin-bottom: var(--space-l);
+  transition: border-color 0.3s ease;
 }
 legend {
   font-size: var(--font-size-h3);
@@ -149,9 +153,12 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="date"], 
   width: 100%;
   padding: var(--space-s);
   border: 1px solid var(--color-neutral-dark);
+  background-color: var(--color-neutral-light); /* Fundo dos inputs */
+  color: var(--color-text); /* Cor do texto dentro dos inputs */
   border-radius: 5px;
   font-size: var(--font-size-body);
   font-family: var(--font-family-base);
+  transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 input:focus, textarea:focus {
   outline: none;
@@ -159,7 +166,7 @@ input:focus, textarea:focus {
   box-shadow: 0 0 5px var(--color-secondary);
 }
 .error-message {
-  color: #d90429;
+  color: #d90429; /* Cor de erro se mantém */
   font-size: var(--font-size-small);
   height: var(--space-s);
 }
@@ -171,8 +178,8 @@ input:focus, textarea:focus {
 
 /* --- Botões --- */
 button[type="submit"] {
-  background-color: var(--color-accent); /* Usa a nova cor acessível */
-  color: #ffffff;
+  background-color: var(--color-accent);
+  color: #ffffff; /* Assumindo branco como melhor contraste com accent escuro/claro */
   border: none;
   border-radius: 5px;
   padding: var(--space-s) var(--space-l);
@@ -183,7 +190,10 @@ button[type="submit"] {
   transition: background-color 0.3s, transform 0.1s;
 }
 button[type="submit"]:hover {
-  background-color: #92400E; /* COR DE HOVER CORRIGIDA E ACESSÍVEL */
+  background-color: #92400E; /* Cor de hover escura para accent original */
+}
+body.dark-mode button[type="submit"]:hover {
+  background-color: #ca8a04; /* Cor de hover clara para accent do modo escuro */
 }
 button[type="submit"]:focus {
   outline: 2px solid var(--color-primary);
@@ -194,7 +204,7 @@ button[type="submit"]:active {
 }
 strong a {
   display: inline-block;
-  background-color: var(--color-accent); /* Usa a nova cor acessível */
+  background-color: var(--color-accent);
   color: #ffffff;
   padding: var(--space-s) var(--space-m);
   border-radius: 5px;
@@ -204,8 +214,30 @@ strong a {
   transition: background-color 0.3s ease, transform 0.1s ease;
 }
 strong a:hover {
-  background-color: #92400E; /* COR DE HOVER CORRIGIDA E ACESSÍVEL */
-  transform: translateY(-2px);
+  background-color: #92400E; /* Cor de hover escura */
+}
+body.dark-mode strong a:hover {
+   background-color: #ca8a04; /* Cor de hover clara */
+}
+
+/* Estilo do Botão de Trocar Tema */
+#theme-toggle-button {
+  background-color: var(--color-secondary);
+  color: var(--color-background);
+  border: 1px solid var(--color-text);
+  border-radius: 20px;
+  padding: var(--space-xs) var(--space-m);
+  cursor: pointer;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto var(--space-l) auto;
+  max-width: 200px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+body.dark-mode #theme-toggle-button {
+  background-color: var(--color-accent); /* Usa o accent do modo escuro */
+  color: var(--color-background); /* Fundo escuro */
+  border-color: var(--color-accent); /* Borda da mesma cor */
 }
 
 /* ============================================= */
@@ -237,7 +269,7 @@ nav a {
 }
 nav a:hover {
   background-color: var(--color-primary);
-  color: #ffffff;
+  color: var(--color-neutral-light); /* Ajustado para branco/cinza claro */
 }
 .menu-toggle {
   display: none;
@@ -245,6 +277,13 @@ nav a:hover {
 .hamburger-menu {
   display: none;
   cursor: pointer;
+}
+.hamburger-menu .bar {
+  height: 3px;
+  width: 100%;
+  background-color: var(--color-text);
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
 }
 
 /* ============================================= */
@@ -258,20 +297,15 @@ nav a:hover {
     width: 30px;
     height: 25px;
   }
-  .hamburger-menu .bar {
-    height: 3px;
-    width: 100%;
-    background-color: var(--color-text);
-    border-radius: 10px;
-  }
   header nav {
     display: none;
     position: absolute;
-    top: 70px;
+    top: 70px; /* Ajuste se a altura do header mudar */
     left: 0;
     width: 100%;
     background-color: var(--color-background);
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1000; /* Garante que o menu fique sobre o conteúdo */
   }
   header nav {
     flex-direction: column;

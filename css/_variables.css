@@ -3,7 +3,6 @@
   /* 1. Paleta de Cores (8 cores definidas) */
   --color-primary: #0077b6;         /* Azul principal para links e destaques */
   --color-secondary: #00b4d8;       /* Azul claro para fundos e efeitos */
-  /* COR CORRIGIDA PARA ACESSIBILIDADE */
   --color-accent: #B45309;          /* Laranja escuro acessível (Ratio 4.61:1 com branco) */
 
   --color-text: #333333;            /* Cor do texto principal (quase preto) */
@@ -28,4 +27,18 @@
   --space-l: 2rem;      /* 32px */
   --space-xl: 3rem;     /* 48px */
   --space-xxl: 4rem;    /* 64px */
+}
+
+/* Cores Alternativas para Modo Escuro / Alto Contraste */
+body.dark-mode {
+  --color-primary: #90e0ef;         /* Azul claro (alto contraste com fundo escuro) */
+  --color-secondary: #48cae4;       /* Azul médio claro */
+  --color-accent: #ffb703;          /* Amarelo/Laranja vibrante */
+
+  --color-text: #f8f9fa;            /* Texto principal (quase branco) */
+  --color-text-light: #dee2e6;      /* Texto secundário (cinza claro) */
+
+  --color-background: #121212;      /* Fundo principal (quase preto) */
+  --color-neutral-light: #212529;   /* Fundo de cards/seções (cinza escuro) */
+  --color-neutral-dark: #495057;     /* Bordas e detalhes (cinza médio) */
 }
